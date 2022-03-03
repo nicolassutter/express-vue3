@@ -6,7 +6,7 @@ import type { Pet } from '../../types/pets'
  *
  * @param path - Chemin api, ex: `/pets`
  * @param method - Méthode HTTP
- * @param config - Congig optionelle d'axios
+ * @param config - Config optionnelle d'axios
  * @returns Retourne une promesse du type passé en Generic TS
  */
 const callAPI = async <R>(path: string, method: Method, config: Partial<AxiosRequestConfig> = {}): Promise<R> => {
